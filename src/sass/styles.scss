@@ -1,0 +1,17 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~include-media/dist/include-media";
+
+.App {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.wrapper {
+  min-width: 920px;
+  max-width: 1920px;
+
+  @include media("<=936px") {
+    min-width: 100%;
+  }
+}
